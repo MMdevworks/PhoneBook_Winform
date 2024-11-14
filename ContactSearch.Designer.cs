@@ -45,7 +45,7 @@
             // 
             // txtSearchName
             // 
-            txtSearchName.Location = new Point(39, 47);
+            txtSearchName.Location = new Point(39, 52);
             txtSearchName.Name = "txtSearchName";
             txtSearchName.Size = new Size(270, 23);
             txtSearchName.TabIndex = 0;
@@ -61,18 +61,23 @@
             // 
             // btnSearchContacts
             // 
-            btnSearchContacts.Location = new Point(133, 102);
+            btnSearchContacts.BackColor = Color.FromArgb(0, 64, 64);
+            btnSearchContacts.Cursor = Cursors.Hand;
+            btnSearchContacts.FlatAppearance.BorderColor = Color.Black;
+            btnSearchContacts.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSearchContacts.ForeColor = SystemColors.ControlLightLight;
+            btnSearchContacts.Location = new Point(136, 92);
             btnSearchContacts.Name = "btnSearchContacts";
-            btnSearchContacts.Size = new Size(75, 23);
+            btnSearchContacts.Size = new Size(70, 27);
             btnSearchContacts.TabIndex = 2;
             btnSearchContacts.Text = "Search";
-            btnSearchContacts.UseVisualStyleBackColor = true;
+            btnSearchContacts.UseVisualStyleBackColor = false;
             btnSearchContacts.Click += btnSearchContacts_Click;
             // 
             // lblLName
             // 
             lblLName.AutoSize = true;
-            lblLName.Location = new Point(26, 190);
+            lblLName.Location = new Point(60, 190);
             lblLName.Name = "lblLName";
             lblLName.Size = new Size(63, 15);
             lblLName.TabIndex = 3;
@@ -81,7 +86,7 @@
             // lblLastNameOut
             // 
             lblLastNameOut.AutoSize = true;
-            lblLastNameOut.Location = new Point(133, 190);
+            lblLastNameOut.Location = new Point(170, 190);
             lblLastNameOut.Name = "lblLastNameOut";
             lblLastNameOut.Size = new Size(107, 15);
             lblLastNameOut.TabIndex = 4;
@@ -90,7 +95,7 @@
             // lblFirstNameOut
             // 
             lblFirstNameOut.AutoSize = true;
-            lblFirstNameOut.Location = new Point(133, 155);
+            lblFirstNameOut.Location = new Point(170, 155);
             lblFirstNameOut.Name = "lblFirstNameOut";
             lblFirstNameOut.Size = new Size(107, 15);
             lblFirstNameOut.TabIndex = 6;
@@ -99,7 +104,7 @@
             // lblFName
             // 
             lblFName.AutoSize = true;
-            lblFName.Location = new Point(26, 155);
+            lblFName.Location = new Point(60, 155);
             lblFName.Name = "lblFName";
             lblFName.Size = new Size(64, 15);
             lblFName.TabIndex = 5;
@@ -108,7 +113,7 @@
             // lblMobileOut
             // 
             lblMobileOut.AutoSize = true;
-            lblMobileOut.Location = new Point(133, 226);
+            lblMobileOut.Location = new Point(170, 226);
             lblMobileOut.Name = "lblMobileOut";
             lblMobileOut.Size = new Size(107, 15);
             lblMobileOut.TabIndex = 8;
@@ -117,7 +122,7 @@
             // lblMobile
             // 
             lblMobile.AutoSize = true;
-            lblMobile.Location = new Point(26, 226);
+            lblMobile.Location = new Point(60, 226);
             lblMobile.Name = "lblMobile";
             lblMobile.Size = new Size(44, 15);
             lblMobile.TabIndex = 7;
@@ -126,7 +131,7 @@
             // lblWorkOut
             // 
             lblWorkOut.AutoSize = true;
-            lblWorkOut.Location = new Point(133, 262);
+            lblWorkOut.Location = new Point(170, 262);
             lblWorkOut.Name = "lblWorkOut";
             lblWorkOut.Size = new Size(107, 15);
             lblWorkOut.TabIndex = 10;
@@ -135,7 +140,7 @@
             // lblWork
             // 
             lblWork.AutoSize = true;
-            lblWork.Location = new Point(26, 262);
+            lblWork.Location = new Point(60, 262);
             lblWork.Name = "lblWork";
             lblWork.Size = new Size(35, 15);
             lblWork.TabIndex = 9;
@@ -144,7 +149,7 @@
             // lblAddressOut
             // 
             lblAddressOut.AutoSize = true;
-            lblAddressOut.Location = new Point(133, 300);
+            lblAddressOut.Location = new Point(170, 300);
             lblAddressOut.Name = "lblAddressOut";
             lblAddressOut.Size = new Size(107, 15);
             lblAddressOut.TabIndex = 12;
@@ -153,7 +158,7 @@
             // lblAddress
             // 
             lblAddress.AutoSize = true;
-            lblAddress.Location = new Point(26, 300);
+            lblAddress.Location = new Point(60, 300);
             lblAddress.Name = "lblAddress";
             lblAddress.Size = new Size(49, 15);
             lblAddress.TabIndex = 11;
@@ -163,7 +168,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(357, 456);
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(348, 391);
             Controls.Add(lblAddressOut);
             Controls.Add(lblAddress);
             Controls.Add(lblWorkOut);
@@ -178,6 +184,7 @@
             Controls.Add(label1);
             Controls.Add(txtSearchName);
             Name = "ContactSearch";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ContactSearch";
             ResumeLayout(false);
             PerformLayout();

@@ -44,30 +44,36 @@
             // 
             // txtDeleteKey
             // 
-            txtDeleteKey.Location = new Point(41, 81);
+            txtDeleteKey.Location = new Point(41, 73);
             txtDeleteKey.Name = "txtDeleteKey";
             txtDeleteKey.Size = new Size(268, 23);
             txtDeleteKey.TabIndex = 1;
             // 
             // btnContactDelete
             // 
-            btnContactDelete.Location = new Point(142, 123);
+            btnContactDelete.BackColor = Color.SandyBrown;
+            btnContactDelete.Cursor = Cursors.Hand;
+            btnContactDelete.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnContactDelete.ForeColor = Color.Black;
+            btnContactDelete.Location = new Point(136, 113);
             btnContactDelete.Name = "btnContactDelete";
-            btnContactDelete.Size = new Size(75, 23);
+            btnContactDelete.Size = new Size(73, 30);
             btnContactDelete.TabIndex = 2;
             btnContactDelete.Text = "Delete";
-            btnContactDelete.UseVisualStyleBackColor = true;
+            btnContactDelete.UseVisualStyleBackColor = false;
             btnContactDelete.Click += btnContactDelete_Click;
             // 
             // DeleteContact
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightCyan;
             ClientSize = new Size(362, 164);
             Controls.Add(btnContactDelete);
             Controls.Add(txtDeleteKey);
             Controls.Add(lblDeleteContact);
             Name = "DeleteContact";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "DeleteContact";
             ResumeLayout(false);
             PerformLayout();
