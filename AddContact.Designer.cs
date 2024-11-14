@@ -43,18 +43,21 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(134, 278);
+            btnAdd.BackColor = Color.FromArgb(0, 64, 64);
+            btnAdd.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAdd.ForeColor = SystemColors.ControlLightLight;
+            btnAdd.Location = new Point(166, 257);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(75, 23);
+            btnAdd.Size = new Size(61, 31);
             btnAdd.TabIndex = 0;
             btnAdd.Text = "Add";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 
             // lblContactFName
             // 
             lblContactFName.AutoSize = true;
-            lblContactFName.Location = new Point(28, 60);
+            lblContactFName.Location = new Point(30, 46);
             lblContactFName.Name = "lblContactFName";
             lblContactFName.Size = new Size(64, 15);
             lblContactFName.TabIndex = 1;
@@ -63,7 +66,7 @@
             // lblContactMobile
             // 
             lblContactMobile.AutoSize = true;
-            lblContactMobile.Location = new Point(28, 142);
+            lblContactMobile.Location = new Point(30, 128);
             lblContactMobile.Name = "lblContactMobile";
             lblContactMobile.Size = new Size(91, 15);
             lblContactMobile.TabIndex = 2;
@@ -71,29 +74,29 @@
             // 
             // txtContactFName
             // 
-            txtContactFName.Location = new Point(166, 58);
+            txtContactFName.Location = new Point(169, 43);
             txtContactFName.Name = "txtContactFName";
             txtContactFName.Size = new Size(218, 23);
-            txtContactFName.TabIndex = 3;
+            txtContactFName.TabIndex = 1;
             // 
             // txtContactMobile
             // 
-            txtContactMobile.Location = new Point(163, 134);
+            txtContactMobile.Location = new Point(169, 125);
             txtContactMobile.Name = "txtContactMobile";
             txtContactMobile.Size = new Size(218, 23);
-            txtContactMobile.TabIndex = 4;
+            txtContactMobile.TabIndex = 3;
             // 
             // txtContactWork
             // 
-            txtContactWork.Location = new Point(163, 176);
+            txtContactWork.Location = new Point(169, 166);
             txtContactWork.Name = "txtContactWork";
             txtContactWork.Size = new Size(218, 23);
-            txtContactWork.TabIndex = 6;
+            txtContactWork.TabIndex = 4;
             // 
             // lblContactWork
             // 
             lblContactWork.AutoSize = true;
-            lblContactWork.Location = new Point(28, 184);
+            lblContactWork.Location = new Point(30, 169);
             lblContactWork.Name = "lblContactWork";
             lblContactWork.Size = new Size(82, 15);
             lblContactWork.TabIndex = 5;
@@ -101,15 +104,15 @@
             // 
             // txtContactLName
             // 
-            txtContactLName.Location = new Point(166, 96);
+            txtContactLName.Location = new Point(169, 84);
             txtContactLName.Name = "txtContactLName";
             txtContactLName.Size = new Size(218, 23);
-            txtContactLName.TabIndex = 8;
+            txtContactLName.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(28, 98);
+            label1.Location = new Point(30, 87);
             label1.Name = "label1";
             label1.Size = new Size(63, 15);
             label1.TabIndex = 7;
@@ -117,15 +120,15 @@
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(166, 224);
+            txtAddress.Location = new Point(169, 207);
             txtAddress.Name = "txtAddress";
             txtAddress.Size = new Size(218, 23);
-            txtAddress.TabIndex = 10;
+            txtAddress.TabIndex = 5;
             // 
             // lblAddress
             // 
             lblAddress.AutoSize = true;
-            lblAddress.Location = new Point(28, 226);
+            lblAddress.Location = new Point(30, 210);
             lblAddress.Name = "lblAddress";
             lblAddress.Size = new Size(49, 15);
             lblAddress.TabIndex = 9;
@@ -135,7 +138,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(458, 450);
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(422, 314);
             Controls.Add(txtAddress);
             Controls.Add(lblAddress);
             Controls.Add(txtContactLName);
@@ -148,6 +152,7 @@
             Controls.Add(lblContactFName);
             Controls.Add(btnAdd);
             Name = "AddContact";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddContact";
             ResumeLayout(false);
             PerformLayout();

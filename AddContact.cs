@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,13 +26,20 @@ namespace Assignment4_1
             }
             else
             {
+               
                 Person person = new Person();
                 person.FirstName = txtContactFName.Text;
                 person.LastName = txtContactLName.Text;
-                person.MobileNumber = txtContactMobile.Text;
-                person.WorkNumber = txtContactWork.Text;
-                person.Address = txtAddress.Text;
 
+                string mobile = txtContactMobile.Text;
+                string work = txtContactWork.Text;
+                person.MobileNumber = Regex.Replace(mobile, @"(\d{3})(\d{3})(\d{4})", "($1)-$2-$3");
+                person.WorkNumber = Regex.Replace(work, @"(\d{3})(\d{3})(\d{4})", "($1)-$2-$3");
+
+
+
+                person.Address = txtAddress.Text;
+              
                 PhoneBookData.phoneBook.Add(person.FirstName, person);
                 MessageBox.Show("Contact Added!");
                 RefreshInputs();

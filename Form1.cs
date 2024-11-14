@@ -13,7 +13,7 @@ namespace Assignment4_1
         {
             Random rnd = new Random();
             long randomNum = rnd.Next(1000000000, int.MaxValue);
-            string format = "000-000-0000";
+            string format = "(000)-000-0000";
 
             return randomNum.ToString(format);
 
