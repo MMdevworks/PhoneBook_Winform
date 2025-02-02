@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/d842aff5-81c1-472c-aee3-9876c15b3cda
 
 A personal contacts Winform application with Add, Remove, and Search functionality.
 
-<b>Project Goal:</b> Design a personal phone / address book using a Dictionary collection.
+<b>Project Objective:</b> Design a personal phone / address book using a Dictionary collection.
 
 ### Built With
  [![Csharp][csharp-badge]][csharp-url]
